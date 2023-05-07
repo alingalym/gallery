@@ -5,6 +5,7 @@ import styles from "@/styles/Home.module.css";
 import { Contract, providers, ethers } from "ethers";
 import React, { useEffect, useState, useRef } from "react";
 import Web3Modal from "web3modal";
+import ThisWorks from './components/ThisWorks'
 import { NFT_CONTRACT_ADDRESS, abi } from "@/constants";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -129,6 +130,7 @@ export default function Home() {
           {renderButton()}
           <br />
           <p>Your number of nfts: {nfts}</p>
+          <ThisWorks amount={nfts} />
         </div>
       </main>
     </div>
