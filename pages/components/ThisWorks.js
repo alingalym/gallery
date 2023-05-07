@@ -40,10 +40,10 @@ function ThisWorks({amount}) {
 
     return (
       <div>
-        <img src={"./"+myNumber+".jpg"} alt=""/>
+        <img src={"https://gateway.pinata.cloud/ipfs/QmVPWD2NCjzwLsMN3sgAghHMDPtcHwDtRmqw9J1VyQjies/"+myNumber+".jpg"} alt=""/>
         <p>NFT is : {myNumber}</p>
-        <button onClick={increment}> _Increment+ </button>
-        <button onClick={decrement}> _Decrement- </button>
+        <button onClick={increment}> Move_to_next </button>
+        <button onClick={decrement}> Move_to_prev </button>
       </div>
     );
   }
