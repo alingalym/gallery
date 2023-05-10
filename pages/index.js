@@ -6,6 +6,7 @@ import { Contract, providers, ethers } from "ethers";
 import React, { useEffect, useState, useRef } from "react";
 import Web3Modal from "web3modal";
 import ThisWorks from './components/ThisWorks'
+import HomeLoad from './components/LoadFromServer'
 import { NFT_CONTRACT_ADDRESS, abi } from "@/constants";
 
 const inter = Inter({ subsets: ["latin"] });
@@ -131,6 +132,7 @@ export default function Home() {
           <br />
           <p>Your number of nfts: {nfts}</p>
           <ThisWorks amount={nfts} />
+          <HomeLoad>App_Key</HomeLoad>
         </div>
       </main>
     </div>
